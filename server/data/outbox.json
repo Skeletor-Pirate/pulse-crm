@@ -1,0 +1,22 @@
+[
+  {
+    "id": "resend_sim_779vdno88",
+    "sentTo": "tdohmke@github.com",
+    "sentFrom": "Alex Morgan <outreach@pulseflow.dev>",
+    "subject": "scaling GitHub's growth in Developer Tools & Cloud",
+    "text": "Hi Thomas Dohmke,\n\nNoticed how GitHub is pioneering the future of building happens together — really sharp approach to Developer Tools & Cloud.\n\nSeeing your growth in Developer Tools & Cloud, I imagined your team might be running into bottlenecks around eliminating manual workflow bottlenecks in developer tools & cloud.\n\nWe built PulseFlow AI specifically to solve this through autonomous CRM scraper swarms and hyper-personalized outbound pipelines. Teams similar to GitHub have cut manual prospecting cycles by 70% in their first 30 days.\n\nAre you open to a 10-minute coffee chat this Thursday?\n\nWarm regards,\nAlex Morgan\nPulseFlow AI",
+    "provider": "Simulated Sandbox (Zero-Key)",
+    "sentAt": "2026-10-12T10:05:45.297Z",
+    "status": "Queued & Verified"
+  },
+  {
+    "id": "resend_sim_vhdtxm4jq",
+    "sentTo": "founder@postman.com",
+    "sentFrom": "alex@pulseflow.dev",
+    "subject": "Scaling Postman Agent stack outreach",
+    "text": "Hi Abhinav, noticed your work on Postman agent stack...",
+    "provider": "Simulated Sandbox (Zero-Key)",
+    "sentAt": "2026-10-12T09:50:25.843Z",
+    "status": "Queued & Verified"
+  }
+]

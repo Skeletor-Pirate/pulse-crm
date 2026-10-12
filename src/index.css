@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #3b82f6;
+  --color-accent: #10b981;
+  --apple-bg: #06080f;
+  --glass-bg: rgba(13, 17, 28, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #06080e;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.18), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 100% 10%, rgba(16, 185, 129, 0.10), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 0% 80%, rgba(139, 92, 246, 0.09), transparent 60%),
+    radial-gradient(ellipse 80% 50% at 50% 120%, rgba(30, 58, 138, 0.12), transparent 70%);
+  background-attachment: fixed;
+  color: #f1f5f9;
+  letter-spacing: -0.012em;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar - Apple Minimalist */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* Apple & Linear Luxury Frosted Glass Panels */
+.glass-panel {
+  background: rgba(11, 15, 25, 0.76);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 10px 30px -5px rgba(0, 0, 0, 0.5),
+    0 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-elevated {
+  background: rgba(14, 20, 34, 0.82);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 20px 40px -10px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.glass-card {
+  background: rgba(16, 21, 35, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: rgba(22, 29, 48, 0.7);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 12px 28px -4px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Emil Kowalski Tactile Button Spring Feedback */
+button, a[role="button"] {
+  transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, color 0.16s ease;
+}
+
+button:active, a[role="button"]:active {
+  transform: scale(0.972);
+}
+
+/* High-Impact Primary Glow Button */
+.btn-glow-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #4f46e5 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 0 20px rgba(37, 99, 235, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.btn-glow-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #4338ca 100%);
+  box-shadow: 
+    0 0 28px rgba(37, 99, 235, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-glow-emerald {
+  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #047857 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 0 20px rgba(16, 185, 129, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.btn-glow-emerald:hover {
+  box-shadow: 
+    0 0 28px rgba(16, 185, 129, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Terminal & Matrix Styling */
+.terminal-window {
+  background: rgba(3, 6, 14, 0.96);
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.95), 0 16px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Gradients */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #bfdbfe 0%, #60a5fa 50%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #a7f3d0 0%, #34d399 50%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 50%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing badges */
+.badge-glow {
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.badge-glow-blue {
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+
+.badge-glow-purple {
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+}
+
+/* Omnibar ambient border */
+.omnibar-glow {
+  position: relative;
+}
+
+.omnibar-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 1rem;
+  padding: 1px;
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.5), rgba(168, 85, 247, 0.5), rgba(16, 185, 129, 0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.omnibar-glow:focus-within::before {
+  opacity: 1;
+}
